@@ -5,6 +5,9 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 	<package name="helloworld" extends="struts-default">
+		<interceptors>
+			<interceptor name="myinterceptor" class="com.yiibai.struts2.MyInterceptor" />
+		</interceptors>
 
 		<action name="index">
 			<result>/index.jsp</result>
@@ -12,6 +15,9 @@
 
 		<action name="hello" class="com.yiibai.struts2.HelloWorldAction"
 			method="execute">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="timer" />
+			<interceptor-ref name="myinterceptor" />
 			<result name="success">/helloWorld.jsp</result>
 		</action>
 
