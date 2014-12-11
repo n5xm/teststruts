@@ -26,5 +26,50 @@
 			<result name="success">/helloWorld.jsp</result>
 			<result name="error">/AccessDenied.jsp</result>
 		</action>
+
+		<!-- freemaker是一种流行的模板引擎，用于使用预定义的模板来生成输出 -->
+		<action name="hello3" class="com.yiibai.struts2.HelloWorldAction"
+			method="execute">
+			<result name="success" type="freemarker">
+				<param name="location">/hello.fm</param>
+			</result>
+		</action>
+
+		<action name="helloOgnl" class="com.yiibai.struts2.HelloWorldActionOgnl"
+			method="execute">
+			<result name="success">/helloWorldOgnl.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="upload" namespace="/upload" extends="struts-default">
+		<action name="upload" class="com.yiibai.struts2.UploadFile">
+			<interceptor-ref name="defaultStack">
+				<!-- 修改允许上传文件的大小(默认值是2M), 将调用FileUploadInterceptor中的setMaximumSize(223434555) -->
+				<param name="fileUpload.maximumSize">223434555</param>
+				<!-- 配置允许上传文件的类型,如果有多个类型用","隔开 -->
+				<param name="fileUpload.allowedTypes">application/vnd.ms-excel,text/plain,image/jpeg,image/gif</param>
+				<!--配置允许上传文件的扩展名,如果有多个用","隔开 -->
+				<param name="fileUpload.allowedExtensions">txt,excel,ppt,jpg,gif</param>
+			</interceptor-ref>
+			<result name="success">/uploadSuccess.jsp</result>
+			<result name="error">/uploadError.jsp</result>
+			<result name="input">/uploadError.jsp</result>
+		</action>
+
+		<action name="uploadsAction_*" class="com.yiibai.struts2.UploadsAction"
+			method="{1}">
+			<interceptor-ref name="defaultStack">
+				<!-- 修改允许上传文件的大小(默认值是2M), 将调用FileUploadInterceptor中的setMaximumSize(223434555) -->
+				<param name="fileUpload.maximumSize">223434555</param>
+				<!-- 配置允许上传文件的类型,如果有多个类型用","隔开 -->
+				<param name="fileUpload.allowedTypes">application/vnd.ms-excel,text/plain</param>
+				<!--配置允许上传文件的扩展名,如果有多个用","隔开 -->
+				<param name="fileUpload.allowedExtensions">txt,excel,ppt</param>
+			</interceptor-ref>
+			<result name="success">/uploadSuccess.jsp</result>
+			<result name="error">/uploadError.jsp</result>
+			<result name="input">/uploadError.jsp</result>
+		</action>
 	</package>
 </struts>

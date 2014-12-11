@@ -4,6 +4,7 @@ public class HelloWorldAction {
 	private String name;
 
 	public String execute() throws Exception {
+		System.out.println("Inside action....");
 		return "success";
 	}
 
