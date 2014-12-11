@@ -4,6 +4,7 @@
    "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
 	<package name="helloworld" extends="struts-default">
 		<interceptors>
 			<interceptor name="myinterceptor" class="com.yiibai.struts2.MyInterceptor" />
@@ -40,6 +41,33 @@
 			<result name="success">/helloWorldOgnl.jsp</result>
 		</action>
 
+		<action name="loginaction" class="com.yiibai.struts2.LoginAction"
+			method="execute">
+			<result name="success">/loginSuccess.jsp</result>
+			<result name="error">/loginError.jsp</result>
+		</action>
+
+		<action name="emailer" class="com.yiibai.struts2.Emailer"
+			method="execute">
+			<result name="success">/emailSuccess.jsp</result>
+			<result name="error">/emailError.jsp</result>
+		</action>
+
+		<action name="empinfo" class="com.yiibai.struts2.Employee"
+			method="execute">
+			<result name="input">/validationsIndex.jsp</result>
+			<result name="success">/validationsSuccess.jsp</result>
+		</action>
+
+		<action name="empinfoXml" class="com.yiibai.struts2.EmployeeXml"
+			method="execute">
+			<result name="input">/validationsIndex.jsp</result>
+			<result name="success">/validationsSuccess.jsp</result>
+		</action>
+
+		<action name="locale" class="com.yiibai.struts2.Locale" method="execute">
+			<result name="success">/localizationIndex.jsp</result>
+		</action>
 	</package>
 
 	<package name="upload" namespace="/upload" extends="struts-default">
