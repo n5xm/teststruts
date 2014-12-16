@@ -14,7 +14,15 @@
       <input type="text" name="name"/>
       <input type="submit" value="Say Hello"/>
    </form>
-   
-   <a href="localizationIndex.jsp">struts_localization</a>
+   <br/>
+   <a href="index2.jsp">struts_interceptors</a><br/><br/>
+   <a href="index3.jsp">struts_result_types</a><br/><br/>
+   <a href="indexOgnl.jsp">struts_value_stack_ognl</a><br/><br/>
+   <a href="uploadIndex.jsp">struts_file_uploads</a><br/><br/>
+   <a href="loginIndex.jsp">struts_database_access</a><br/><br/>
+   <a href="emailIndex.jsp">struts_sending_email</a><br/><br/>
+   <a href="validationsIndex.jsp">struts_validations</a><br/><br/>
+   <a href="validations2Index.jsp">struts_validations XML</a><br/><br/>
+   <a href="localizationIndex.jsp">struts_localization</a><br/><br/>
 </body>
 </html>
