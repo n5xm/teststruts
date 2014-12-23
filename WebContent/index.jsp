@@ -26,6 +26,7 @@
    <a href="validations2Index.jsp">struts_validations XML</a><br/><br/>
    <a href="localizationIndex.jsp">struts_localization</a><br/><br/>
    <a href="system.action">struts_type_conversion</a><br/><br/>
+   <a href="exceptionIndex.jsp">struts_exception_handling</a><br/><br/>
 
 </body>
 </html>

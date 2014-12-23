@@ -10,6 +10,11 @@
 			<interceptor name="myinterceptor" class="com.yiibai.struts2.MyInterceptor" />
 		</interceptors>
 
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.NullPointerException"
+				result="error" />
+		</global-exception-mappings>
+
 		<action name="index">
 			<result>/index.jsp</result>
 		</action>
@@ -74,6 +79,13 @@
 			<result name="success">/System.jsp</result>
 		</action>
 
+		<action name="helloException" class="com.yiibai.struts2.HelloWorldActionException"
+			method="execute">
+			<!-- <exception-mapping exception="java.lang.NullPointerException" result="error" 
+				/> -->
+			<result name="error">/exceptionError.jsp</result>
+			<result name="success">/HelloWorld.jsp</result>
+		</action>
 	</package>
 
 	<package name="upload" namespace="/upload" extends="struts-default">
