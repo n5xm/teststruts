@@ -86,6 +86,11 @@
 			<result name="error">/exceptionError.jsp</result>
 			<result name="success">/HelloWorld.jsp</result>
 		</action>
+
+		<action name="helloTags" class="com.yiibai.struts2.HelloWorldActionTags"
+			method="execute">
+			<result name="success">/controlTagsHelloWorld.jsp</result>
+		</action>
 	</package>
 
 	<package name="upload" namespace="/upload" extends="struts-default">
