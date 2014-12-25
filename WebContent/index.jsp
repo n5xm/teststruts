@@ -27,6 +27,7 @@
    <a href="localizationIndex.jsp">struts_localization</a><br/><br/>
    <a href="system.action">struts_type_conversion</a><br/><br/>
    <a href="exceptionIndex.jsp">struts_exception_handling</a><br/><br/>
+   <a href="annotationsIndex.jsp">struts_annotations</a><br/><br/>
 
 </body>
 </html>
