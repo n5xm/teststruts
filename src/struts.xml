@@ -123,4 +123,24 @@
 			<result name="input">/uploadError.jsp</result>
 		</action>
 	</package>
+
+	<package name="struts_spring" namespace="/struts_spring"
+		extends="struts-default">
+		<action name="user" class="userClass" method="execute">
+			<result name="success">/struts_spring/user.jsp</result>
+		</action>
+	</package>
+
+	<package name="struts_tiles" namespace="/struts_tiles" extends="struts-default">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+
+		<action name="*Menu" method="{1}" class="com.yiibai.struts_tiles.MenuAction">
+			<result name="tiger" type="tiles">tiger</result>
+			<result name="lion" type="tiles">lion</result>
+		</action>
+
+	</package>
 </struts>
