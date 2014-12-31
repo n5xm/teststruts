@@ -29,12 +29,12 @@
    <a href="exceptionIndex.jsp">struts_exception_handling</a><br/>
    <a href="annotationsIndex.jsp">struts_annotations</a><br/>
 Struts2 控件标签 struts_control_tags<hr/>
-   <a href="controlTagsIndex.jsp">struts_if_else_tags</a><br/>
-Struts2 数据标签 struts_data_tags<hr/>
-Struts2 Ajax 标签 struts_ajax_tags<hr/>
-Struts2和Spring集成 struts_spring<hr/>
-	<a href="struts_spring/user">struts_spring</a><br/>
-Struts2和Tiles集成 struts_tiles<hr/>
-	<a href="struts_tiles/tigerMenu">struts_tiles</a><br/>
+   <a href="controlTagsIndex.jsp">struts_if_else_tags</a><br/><br/>
+Struts2 数据标签 struts_data_tags<hr/><br/>
+Struts2 Ajax 标签 struts_ajax_tags<hr/><br/>
+	<a href="struts_spring/user">Struts2和Spring集成 struts_spring</a><hr/><br/>
+	<a href="struts_tiles/tigerMenu">Struts2和Tiles集成 struts_tiles</a><hr/><br/>
+	<a href="struts_hibernate/students.jsp">Struts2和Hibernate集成 struts_hibernate</a><hr/>
+	
 </body>
 </html>
