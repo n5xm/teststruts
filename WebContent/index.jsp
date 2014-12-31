@@ -36,5 +36,8 @@ Struts2和Spring集成 struts_spring<hr/>
 	<a href="struts_spring/user">struts_spring</a><br/>
 Struts2和Tiles集成 struts_tiles<hr/>
 	<a href="struts_tiles/tigerMenu">struts_tiles</a><br/>
+Struts2和Hibernate集成 struts_hibernate<hr/>
+	<a href="struts_hibernate/students.jsp">struts_hibernate</a><br/>	
+	
 </body>
 </html>
