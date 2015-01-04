@@ -26,7 +26,7 @@
    <a href="validations2Index.jsp">struts_validations XML</a><br/>
    <a href="localizationIndex.jsp">struts_localization</a><br/>
    <a href="system.action">struts_type_conversion</a><br/>
-   <a href="exceptionIndex.jsp">struts_exception_handling</a><br/>
+   <a href="struts_pages/exceptionIndex.jsp">struts_exception_handling</a><br/>
    <a href="annotationsIndex.jsp">struts_annotations</a><br/>
 Struts2 控件标签 struts_control_tags<hr/>
    <a href="controlTagsIndex.jsp">struts_if_else_tags</a><br/><br/>
