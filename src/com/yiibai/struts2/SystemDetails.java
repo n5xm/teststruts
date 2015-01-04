@@ -14,10 +14,9 @@ public class SystemDetails extends ActionSupport {
 		return environment;
 	}
 
-	public void setEnvironment(Environment environment) {
-		this.environment = environment;
-	}
-
+	// public void setEnvironment(Environment environment) {
+	// this.environment = environment;
+	// }
 	public String getOperatingSystem() {
 		return operatingSystem;
 	}

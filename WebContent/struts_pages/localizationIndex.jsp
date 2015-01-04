@@ -29,7 +29,7 @@
    <s:a href="%{indexFR}" >France</s:a>
    <s:a href="%{indexZH}" >Chinese</s:a>
 
-   <s:form action="empinfoXml" method="post" namespace="/">
+   <s:form action="localeEmpinfo" method="post" namespace="/">
       <s:textfield name="name" key="global.name" size="20" />
       <s:textfield name="age" key="global.age" size="20" />
       <s:submit name="submit" key="global.submit" />

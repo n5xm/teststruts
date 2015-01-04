@@ -24,7 +24,7 @@
    <a href="emailIndex.jsp">struts_sending_email</a><br/>
    <a href="validationsIndex.jsp">struts_validations</a><br/>
    <a href="validations2Index.jsp">struts_validations XML</a><br/>
-   <a href="localizationIndex.jsp">struts_localization</a><br/>
+   <a href="struts_pages/localizationIndex.jsp">struts_localization</a><br/>
    <a href="system.action">struts_type_conversion</a><br/>
    <a href="struts_pages/exceptionIndex.jsp">struts_exception_handling</a><br/>
    <a href="annotationsIndex.jsp">struts_annotations</a><br/>
