@@ -1,4 +1,4 @@
-package com.yiibai.struts2;
+package com.yiibai.struts_pages;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -6,13 +6,13 @@ public class HelloWorldActionException extends ActionSupport {
 	private String name;
 
 	public String execute() {
-		try {
-			String x = null;
-			x = x.substring(0);
-		} catch (Exception e) {
-			e.printStackTrace();
-			// return "errorNullPointer";
-		}
+		// try {
+		String x = null;
+		x = x.substring(0);
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// return "errorNullPointer";
+		// }
 		return SUCCESS;
 	}
 

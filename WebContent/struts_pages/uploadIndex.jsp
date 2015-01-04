@@ -9,7 +9,7 @@
 </head>
 <body>
 单文件上传<hr/>
-	<form action="upload/upload" method="post"
+	<form action="${pageContext.request.contextPath}/upload/upload" method="post"
 		enctype="multipart/form-data">
 		<label for="myFile">Upload your file</label> <input type="file"
 			name="myFile" /> <input type="submit" value="Upload" />

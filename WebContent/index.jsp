@@ -16,20 +16,20 @@
    </form>
 
    <br/>
-   <a href="index2.jsp">struts_interceptors</a><br/>
-   <a href="index3.jsp">struts_result_types</a><br/>
-   <a href="indexOgnl.jsp">struts_value_stack_ognl</a><br/>
-   <a href="uploadIndex.jsp">struts_file_uploads</a><br/>
-   <a href="loginIndex.jsp">struts_database_access</a><br/>
-   <a href="emailIndex.jsp">struts_sending_email</a><br/>
-   <a href="validationsIndex.jsp">struts_validations</a><br/>
-   <a href="validations2Index.jsp">struts_validations XML</a><br/>
-   <a href="localizationIndex.jsp">struts_localization</a><br/>
+   <a href="struts_pages/index2.jsp">struts_interceptors</a><br/>
+   <a href="struts_pages/index3.jsp">struts_result_types</a><br/>
+   <a href="struts_pages/indexOgnl.jsp">struts_value_stack_ognl</a><br/>
+   <a href="struts_pages/uploadIndex.jsp">struts_file_uploads</a><br/>
+   <a href="struts_pages/loginIndex.jsp">struts_database_access</a><br/>
+   <a href="struts_pages/emailIndex.jsp">struts_sending_email</a><br/>
+   <a href="struts_pages/validationsIndex.jsp">struts_validations</a><br/>
+   <a href="struts_pages/validations2Index.jsp">struts_validations XML</a><br/>
+   <a href="struts_pages/localizationIndex.jsp">struts_localization</a><br/>
    <a href="system.action">struts_type_conversion</a><br/>
    <a href="struts_pages/exceptionIndex.jsp">struts_exception_handling</a><br/>
-   <a href="annotationsIndex.jsp">struts_annotations</a><br/>
+   <a href="struts_pages/annotationsIndex.jsp">struts_annotations</a><br/>
 Struts2 控件标签 struts_control_tags<hr/>
-   <a href="controlTagsIndex.jsp">struts_if_else_tags</a><br/><br/>
+   <a href="struts_pages/controlTagsIndex.jsp">struts_if_else_tags</a><br/><br/>
 Struts2 数据标签 struts_data_tags<hr/><br/>
 Struts2 Ajax 标签 struts_ajax_tags<hr/><br/>
 	<a href="struts_spring/user">Struts2和Spring集成 struts_spring</a><hr/><br/>
