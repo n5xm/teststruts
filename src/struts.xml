@@ -10,9 +10,12 @@
 			<interceptor name="myinterceptor" class="com.yiibai.struts2.MyInterceptor" />
 		</interceptors>
 
+		<global-results>
+			<result name="errorNullPointer">/struts_pages/exceptionError.jsp</result>
+		</global-results>
 		<global-exception-mappings>
 			<exception-mapping exception="java.lang.NullPointerException"
-				result="error" />
+				result="errorNullPointer" />
 		</global-exception-mappings>
 
 		<action name="index">
@@ -76,15 +79,15 @@
 
 		<action name="system" class="com.yiibai.struts2.SystemDetails"
 			method="execute">
-			<result name="success">/System.jsp</result>
+			<result name="success">/struts_pages/system.jsp</result>
 		</action>
 
 		<action name="helloException" class="com.yiibai.struts2.HelloWorldActionException"
 			method="execute">
-			<!-- <exception-mapping exception="java.lang.NullPointerException" result="error" 
+			<!-- <exception-mapping exception="java.lang.NullPointerException" result="errorNullPointer" 
 				/> -->
-			<result name="error">/exceptionError.jsp</result>
-			<result name="success">/HelloWorld.jsp</result>
+			<result name="errorNullPointer">/struts_pages/exceptionError.jsp</result>
+			<result name="success">/struts_pages/helloWorld.jsp</result>
 		</action>
 
 		<action name="helloTags" class="com.yiibai.struts2.HelloWorldActionTags"

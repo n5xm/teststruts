@@ -6,8 +6,13 @@ public class HelloWorldActionException extends ActionSupport {
 	private String name;
 
 	public String execute() {
-		String x = null;
-		x = x.substring(0);
+		try {
+			String x = null;
+			x = x.substring(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			// return "errorNullPointer";
+		}
 		return SUCCESS;
 	}
 

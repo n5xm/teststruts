@@ -10,6 +10,10 @@
 * Struts Version: 2.3.20
 * OS version: Microsoft Windows 7 Ultimate(6.1.7601 Service Pack 1 Build 7601)
 
+## Tags
+
+> `issue`, `hotfix`
+
 ## References
 
 [Struts 2 教程](http://www.yiibai.com/struts_2/)
