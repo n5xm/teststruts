@@ -73,8 +73,14 @@
 			<result name="success">/validationsSuccess.jsp</result>
 		</action>
 
-		<action name="locale" class="com.yiibai.struts2.Locale" method="execute">
-			<result name="success">/localizationIndex.jsp</result>
+		<action name="locale" class="com.yiibai.struts_pages.Locale"
+			method="execute">
+			<result name="success">/struts_pages/localizationIndex.jsp</result>
+		</action>
+
+		<action name="localeEmpinfo" class="com.yiibai.struts_pages.Locale"
+			method="empinfo">
+			<result name="success">/struts_pages/localizationSuccess.jsp</result>
 		</action>
 
 		<action name="system" class="com.yiibai.struts2.SystemDetails"
