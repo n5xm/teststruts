@@ -8,8 +8,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.validator.annotations.IntRangeFieldValidator;
 import com.opensymphony.xwork2.validator.annotations.RequiredFieldValidator;
 
-@Results({ @Result(name = "success", location = "/annotationsSuccess.jsp"),
-		@Result(name = "input", location = "/annotationsIndex.jsp") })
+@Results({ @Result(name = "success", location = "/struts_pages/annotationsSuccess.jsp"),
+		@Result(name = "input", location = "/struts_pages/annotationsIndex.jsp") })
 public class EmployeeAnnotations extends ActionSupport {
 	private String name;
 	private int age;

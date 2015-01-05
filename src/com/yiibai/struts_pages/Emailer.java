@@ -1,4 +1,4 @@
-package com.yiibai.struts2;
+package com.yiibai.struts_pages;
 
 import java.util.Properties;
 

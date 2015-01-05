@@ -10,13 +10,9 @@
 			<interceptor name="myinterceptor" class="com.yiibai.struts2.MyInterceptor" />
 		</interceptors>
 
-		<global-results>
-			<result name="errorNullPointer">/struts_pages/exceptionError.jsp</result>
-		</global-results>
-		<global-exception-mappings>
-			<exception-mapping exception="java.lang.NullPointerException"
-				result="errorNullPointer" />
-		</global-exception-mappings>
+		<!-- <global-results> <result name="errorNullPointer">/struts_pages/exceptionError.jsp</result> 
+			</global-results> <global-exception-mappings> <exception-mapping exception="java.lang.NullPointerException" 
+			result="errorNullPointer" /> </global-exception-mappings> -->
 
 		<action name="index">
 			<result>/index.jsp</result>
@@ -27,50 +23,50 @@
 			<interceptor-ref name="params" />
 			<interceptor-ref name="timer" />
 			<interceptor-ref name="myinterceptor" />
-			<result name="success">/helloWorld.jsp</result>
+			<result name="success">/struts_pages/helloWorld.jsp</result>
 		</action>
 
 		<action name="hello2" class="com.yiibai.struts2.HelloWorldAction2"
 			method="execute">
-			<result name="success">/helloWorld.jsp</result>
-			<result name="error">/AccessDenied.jsp</result>
+			<result name="success">/struts_pages/helloWorld.jsp</result>
+			<result name="error">/struts_pages/AccessDenied.jsp</result>
 		</action>
 
 		<!-- freemaker是一种流行的模板引擎，用于使用预定义的模板来生成输出 -->
 		<action name="hello3" class="com.yiibai.struts2.HelloWorldAction"
 			method="execute">
 			<result name="success" type="freemarker">
-				<param name="location">/hello.fm</param>
+				<param name="location">/struts_pages/hello.fm</param>
 			</result>
 		</action>
 
 		<action name="helloOgnl" class="com.yiibai.struts2.HelloWorldActionOgnl"
 			method="execute">
-			<result name="success">/helloWorldOgnl.jsp</result>
+			<result name="success">/struts_pages/helloWorldOgnl.jsp</result>
 		</action>
 
 		<action name="loginaction" class="com.yiibai.struts2.LoginAction"
 			method="execute">
-			<result name="success">/loginSuccess.jsp</result>
-			<result name="error">/loginError.jsp</result>
+			<result name="success">/struts_pages/loginSuccess.jsp</result>
+			<result name="error">/struts_pages/loginError.jsp</result>
 		</action>
 
-		<action name="emailer" class="com.yiibai.struts2.Emailer"
+		<action name="emailer" class="com.yiibai.struts_pages.Emailer"
 			method="execute">
-			<result name="success">/emailSuccess.jsp</result>
-			<result name="error">/emailError.jsp</result>
+			<result name="success">/struts_pages/emailSuccess.jsp</result>
+			<result name="error">/struts_pages/emailError.jsp</result>
 		</action>
 
 		<action name="empinfo" class="com.yiibai.struts2.Employee"
 			method="execute">
-			<result name="input">/validationsIndex.jsp</result>
-			<result name="success">/validationsSuccess.jsp</result>
+			<result name="input">/struts_pages/validationsIndex.jsp</result>
+			<result name="success">/struts_pages/validationsSuccess.jsp</result>
 		</action>
 
 		<action name="empinfoXml" class="com.yiibai.struts2.EmployeeXml"
 			method="execute">
-			<result name="input">/validationsIndex.jsp</result>
-			<result name="success">/validationsSuccess.jsp</result>
+			<result name="input">/struts_pages/validationsIndex.jsp</result>
+			<result name="success">/struts_pages/validationsSuccess.jsp</result>
 		</action>
 
 		<action name="locale" class="com.yiibai.struts_pages.Locale"
@@ -88,17 +84,17 @@
 			<result name="success">/struts_pages/system.jsp</result>
 		</action>
 
-		<action name="helloException" class="com.yiibai.struts2.HelloWorldActionException"
-			method="execute">
-			<!-- <exception-mapping exception="java.lang.NullPointerException" result="errorNullPointer" 
-				/> -->
+		<action name="helloException"
+			class="com.yiibai.struts_pages.HelloWorldActionException" method="execute">
+			<exception-mapping exception="java.lang.NullPointerException"
+				result="errorNullPointer" />
 			<result name="errorNullPointer">/struts_pages/exceptionError.jsp</result>
 			<result name="success">/struts_pages/helloWorld.jsp</result>
 		</action>
 
 		<action name="helloTags" class="com.yiibai.struts2.HelloWorldActionTags"
 			method="execute">
-			<result name="success">/controlTagsHelloWorld.jsp</result>
+			<result name="success">/struts_pages/controlTagsHelloWorld.jsp</result>
 		</action>
 	</package>
 
@@ -112,9 +108,9 @@
 				<!--配置允许上传文件的扩展名,如果有多个用","隔开 -->
 				<param name="fileUpload.allowedExtensions">txt,excel,ppt,jpg,gif</param>
 			</interceptor-ref>
-			<result name="success">/uploadSuccess.jsp</result>
-			<result name="error">/uploadError.jsp</result>
-			<result name="input">/uploadError.jsp</result>
+			<result name="success">/struts_pages/uploadSuccess.jsp</result>
+			<result name="error">/struts_pages/uploadError.jsp</result>
+			<result name="input">/struts_pages/uploadError.jsp</result>
 		</action>
 
 		<action name="uploadsAction_*" class="com.yiibai.struts2.UploadsAction"
@@ -127,9 +123,9 @@
 				<!--配置允许上传文件的扩展名,如果有多个用","隔开 -->
 				<param name="fileUpload.allowedExtensions">txt,excel,ppt</param>
 			</interceptor-ref>
-			<result name="success">/uploadSuccess.jsp</result>
-			<result name="error">/uploadError.jsp</result>
-			<result name="input">/uploadError.jsp</result>
+			<result name="success">/struts_pages/uploadSuccess.jsp</result>
+			<result name="error">/struts_pages/uploadError.jsp</result>
+			<result name="input">/struts_pages/uploadError.jsp</result>
 		</action>
 	</package>
 
