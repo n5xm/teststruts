@@ -32,9 +32,9 @@
 
 > Source not found.
 
-> This exception has not been fixed. Added try catch block.
+> This exception has not been fixed. Had tried to add try catch block.
 
-> *Reason* : no errorNullPointer
+> *Reason* : Did not return errorNullPointer from HelloWorldActionException
 
 > [Struts2 异常处理](http://www.yiibai.com/struts_2/struts_exception_handling.html)
 
