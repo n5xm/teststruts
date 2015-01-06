@@ -9,6 +9,9 @@
 * git version 1.9.4.msysgit.1
 * Struts Version: 2.3.20
 * OS version: Microsoft Windows 7 Ultimate(6.1.7601 Service Pack 1 Build 7601)
+* Spring Version: 3.1.0.M2
+* Tiles Version: 2.0.6
+* Hibernate Version: 3.0
 
 ## Tags
 
